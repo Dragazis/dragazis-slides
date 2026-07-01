@@ -101,12 +101,13 @@
   .closing-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--cream);max-width:30ch;margin:0 auto 22px;line-height:1.45;}
 
   /* ---- Overrides όταν η σελίδα ζει μέσα στο θέμα dragazis.gr (Kadence). No-op στο standalone. ---- */
+  html{overflow-x:hidden;}
   .entry-header.page-title{display:none !important;}
-  .content-container.site-container{max-width:100% !important;}
   .entry.content-bg{background:transparent !important;box-shadow:none !important;padding:0 !important;}
-  .entry-content-wrap{padding:0 !important;margin:0 !important;}
-  .entry-content.single-content{margin:0 !important;}
+  .entry-content-wrap,.entry-content.single-content{padding:0 !important;margin:0 !important;max-width:100% !important;}
   .single-content > *{margin-top:0;}
+  /* full-bleed κάθε λωρίδα ανεξαρτήτως του πλάτους που επιβάλλει το θέμα */
+  .hero,section,.divider,footer{width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:calc(50% - 50vw) !important;}
 </style>
 </head>
 <body>
